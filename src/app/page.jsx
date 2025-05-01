@@ -1,12 +1,12 @@
 import React from "react";
-import FNFCompare from "@/components/fnfCompare";
+import NotFollowingBack from "@/components/notFollowingBack";
 import '../styles/main.scss';
 
 export default function Home() {
   return (
     <>
       <div>
-        <FNFCompare />
+        <NotFollowingBack />
       </div>
     </>
   );

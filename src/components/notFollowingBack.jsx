@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-function FNFCompare() {
+const NotFollowingBack = () => {
   const [followersData, setFollowersData] = useState(null);
   const [followingData, setFollowingData] = useState(null);
   const [notFollowing, setNotFollowing] = useState([]);
@@ -40,13 +40,7 @@ function FNFCompare() {
   };
 
   return (
-    <div>
-      <header className="header">
-        <div className="header-container">
-          <h1 className="logo">FNFCompare</h1>
-        </div>
-      </header>
-
+    <div className="not-following-back-wrapper">
       <div className="file-upload">
         <label>
           Upload Followers JSON:
@@ -84,4 +78,4 @@ function FNFCompare() {
   );
 }
 
-export default FNFCompare;
+export default NotFollowingBack;

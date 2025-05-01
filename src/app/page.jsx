@@ -1,5 +1,5 @@
 import React from "react";
-import FNFCompare from "@/components/fnf_compare";
+import FNFCompare from "@/components/fnfCompare";
 import '../styles/main.scss';
 
 export default function Home() {

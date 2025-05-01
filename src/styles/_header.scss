@@ -1,0 +1,40 @@
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+  
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #262626;
+      margin: 0;
+    }
+  
+    .nav-buttons {
+      button {
+        background: none;
+        border: none;
+        color: #0095f6;
+        font-weight: 600;
+        cursor: pointer;
+        margin-left: 15px;
+        font-size: 14px;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  

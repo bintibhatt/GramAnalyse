@@ -1,58 +1,44 @@
 .header {
-  // background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-  padding: 1rem 0;
-  color: #fff;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: #23272a;
+  padding: 10px 0;
+  color: #eaeaea;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
 
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 24px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    min-height: 56px;
   }
 
-  &__title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    // background: -webkit-linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-  }
-
-  &__nav {
-    .header__menu {
+  &__branding {
+    a {
       display: flex;
-      gap: 1.5rem;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      .header__link {
-        color: black;
-        text-decoration: none;
-        font-size: 1rem;
-        transition: opacity 0.2s ease-in-out;
-
-        &:hover {
-          opacity: 0.7;
-        }
-      }
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
     }
   }
 
-  .header__branding {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  &__icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    background: #23272a;
+    padding: 4px;
+    border: 2px solid #7289da;
   }
 
-  &__icon {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #eaeaea;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #7289da, 0 2px 4px rgba(0, 0, 0, 0.12);
   }
 }

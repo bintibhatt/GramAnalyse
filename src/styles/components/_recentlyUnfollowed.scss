@@ -1,0 +1,87 @@
+// Recently Unfollowed Component Styles
+.recently-unfollowed-wrapper {
+  background: #23272a;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  max-width: 700px;
+  margin: 8px auto;
+  color: #eaeaea;
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #f04747;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #eaeaea;
+    text-align: center;
+  }
+}
+
+// Unfollowed User Card Specific Styles
+.unfollowed-card {
+  border-left: 3px solid #f04747;
+
+  &:hover {
+    border-left-color: #d73627;
+    box-shadow: 0 2px 8px rgba(240, 71, 71, 0.15);
+  }
+}
+
+.user-info {
+  .unfollow-date {
+    color: #f04747;
+    font-weight: 500;
+    font-size: 11px;
+  }
+
+  .time-ago {
+    font-size: 9px;
+    color: #99aab5;
+    font-style: italic;
+  }
+} // Re-follow Button Styles
+.refollow-btn {
+  background: linear-gradient(135deg, #43b581, #3aa76d);
+  color: #ffffff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+
+  &:hover {
+    background: linear-gradient(135deg, #3aa76d, #359268);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(67, 181, 129, 0.2);
+  }
+}
+
+// Loading and No Data Messages
+.loading-message {
+  text-align: center;
+  padding: 16px;
+  color: #90caf9;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.no-data-message {
+  text-align: center;
+  padding: 16px;
+  color: #43b581;
+  font-size: 14px;
+  font-weight: 500;
+  background: #2c2f33;
+  border-radius: 6px;
+  border: 2px dashed #43b581;
+  margin-top: 12px;
+}

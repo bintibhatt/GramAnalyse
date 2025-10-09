@@ -1,6 +1,7 @@
 @use "./base/global";
 @use "./components/header";
 @use "./components/notFollowingBack";
+@use "./components/recentlyUnfollowed";
 
 // Dashboard Main Container
 .dashboard-main {
@@ -10,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 40px 20px 60px 20px;
+  padding: 20px 12px 30px 12px;
   margin: 0;
   position: relative;
 
@@ -29,10 +30,10 @@
 // Welcome Section
 .dashboard-welcome {
   background: #23272a;
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(114, 137, 218, 0.1);
-  padding: 48px 56px;
-  margin-bottom: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(114, 137, 218, 0.1);
+  padding: 24px 32px;
+  margin-bottom: 20px;
   text-align: center;
   color: #eaeaea;
   max-width: 1000px;
@@ -41,10 +42,10 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   h1 {
-    font-size: 42px;
+    font-size: 28px;
     font-weight: 800;
     color: #90caf9;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     background: linear-gradient(135deg, #90caf9, #42a5f5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -53,12 +54,23 @@
   }
 
   p {
-    font-size: 20px;
+    font-size: 16px;
     color: #b8c5d1;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     font-weight: 400;
     line-height: 1.5;
   }
+}
+
+//content-wrapper{
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 // Dashboard Links
